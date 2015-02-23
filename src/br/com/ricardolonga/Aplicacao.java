@@ -1,7 +1,8 @@
 package br.com.ricardolonga;
 
 /**
- * Precisamos garantir uma única instância da classe DatabaseProperties no ciclo de vida da aplicação.
+ * Precisamos garantir uma única instância da classe DatabaseProperties no ciclo de vida da aplicação.Ou seja, para o segundo cliente 
+ * o host deveria também ser 192.168.10.10.
  */
 public class Aplicacao {
 
