@@ -4,8 +4,16 @@ package br.com.ricardolonga;
  * Created by longa on 23/02/15.
  */
 public class DatabaseProperties {
-    
+
+    private static final DatabaseProperties INSTANCE = new DatabaseProperties();
+
     private String host = "localhost";
+
+    private DatabaseProperties() {}
+
+    public static DatabaseProperties getInstance() {
+        return INSTANCE;
+    }
 
     public void setHost(String host) {
         this.host = host;
