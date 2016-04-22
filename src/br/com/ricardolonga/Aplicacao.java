@@ -2,7 +2,8 @@ package br.com.ricardolonga;
 
 /**
  * Precisamos garantir uma única instância da classe DatabaseProperties no ciclo de vida da aplicação.Ou seja, para o segundo cliente 
- * o host deveria também ser 192.168.10.10.
+ * o host deveria também se
+ * r 192.168.10.10.
  */
 public class Aplicacao {
 
@@ -10,7 +11,7 @@ public class Aplicacao {
         /*
          * Simulando o primeiro cliente consumiddor...
          */
-        DatabaseProperties databaseProperties = new DatabaseProperties();
+        DatabaseProperties databaseProperties = DatabaseProperties.getInstance();
         
         databaseProperties.setHost("192.168.10.10");
 
@@ -19,7 +20,7 @@ public class Aplicacao {
         /*
          * Simulando o segundo cliente consumiddor...
          */
-        DatabaseProperties novaInstanciaDeDatabaseProperties = new DatabaseProperties();
+        DatabaseProperties novaInstanciaDeDatabaseProperties = DatabaseProperties.getInstance();
         
         System.out.println("Host para o segundo cliente: " + novaInstanciaDeDatabaseProperties.getHost());
     }

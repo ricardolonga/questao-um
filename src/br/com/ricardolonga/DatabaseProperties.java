@@ -1,11 +1,14 @@
 package br.com.ricardolonga;
 
-/**
- * Created by longa on 23/02/15.
- */
-public class DatabaseProperties {
-    
+public enum DatabaseProperties {
+
+    INSTANCE;
+
     private String host = "localhost";
+
+    public static DatabaseProperties getInstance() {
+        return INSTANCE;
+    }
 
     public void setHost(String host) {
         this.host = host;
