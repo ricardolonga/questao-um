@@ -8,7 +8,7 @@ public class Aplicacao {
 
     public static void main(String[] args) {
         /*
-         * Simulando o primeiro cliente consumiddor...
+         * Simulando o primeiro cliente consumidor...
          */
         DatabaseProperties databaseProperties = new DatabaseProperties();
         
@@ -17,7 +17,7 @@ public class Aplicacao {
         System.out.println("Host para o primeiro cliente: " + databaseProperties.getHost());
 
         /*
-         * Simulando o segundo cliente consumiddor...
+         * Simulando o segundo cliente consumidor...
          */
         DatabaseProperties novaInstanciaDeDatabaseProperties = new DatabaseProperties();
         
